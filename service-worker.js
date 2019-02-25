@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/HCDE498_VoterCentric/precache-manifest.966bed08a6de3f1532769ccd9c19a830.js"
+  "/HCDE498_VoterCentric/precache-manifest.e482829eee1928441ad47ca4517bb60f.js"
 );
 
 workbox.clientsClaim();

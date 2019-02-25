@@ -37,6 +37,18 @@
   background-color: #00c469
 }
 
+.lefttext {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+}
+
+.righttext {
+  position: absolute;
+  top: 33%;
+  right: 10%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

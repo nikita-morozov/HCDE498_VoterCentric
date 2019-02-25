@@ -2,8 +2,9 @@
   "name": "votercentric",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://nikita-morozov.github.io/HCDE498_VoterCentric",
+  "homepage": "https://nikita-morozov.github.io/HCDE498_VoterCentric",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
@@ -13,8 +14,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

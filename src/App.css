@@ -1,26 +1,46 @@
 .App {
-  text-align: center;
+  text-align: left;
+  font: Helvetica, sans-serif;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 80px;
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Toolbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 80px;
+  background-color: #c40000;
 }
 
-.App-link {
-  color: #61dafb;
+.Button {
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  align-items: flex-start;
+}
+
+.CTA {
+  height: 60px;
+  padding: 5px;
+  margin: 5px;
+  align-items: flex-end;
+}
+
+.img-left {
+  height: 400px;
+  width: 50%;
+  background-color: #0003c4
+}
+
+.img-right {
+  height: 400px;
+  width: 50%;
+  background-color: #00c469
 }
 
 @keyframes App-logo-spin {

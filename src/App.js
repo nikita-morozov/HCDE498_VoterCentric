@@ -9,25 +9,31 @@ class App extends Component {
       <div className="App">
         <div className="Header">
           <header className="Toolbar">
-            <img src={logo} className="App-logo" style={{marginLeft: 0}} alt="logo" />
-            <Button onClick={() => {}} className="Button" variant="contained" style={{margin: 10, padding: 10}} color="primary">Voter Issues</Button>
-            <Button onClick={() => {}} className="Button" variant="contained" style={{margin: 10, padding: 10}} color="primary">Statistics</Button>
-            <Button onClick={() => {}} className="Button" variant="contained" style={{margin: 10, padding: 10}} color="primary">Transcripts</Button>
-            <Button onClick={() => {}} className="CTA" variant="contained" style={{margin: 5, padding: 5, marginLeft: "auto", marginRight: 10}} color="default">Sign Up</Button>
+            <img src={logo} className="App-logo" style={{ marginLeft: 0 }} alt="logo" />
+            <Button onClick={() => { }} className="Button" variant="contained" style={{ margin: 10, padding: 10 }} color="primary">Voter Issues</Button>
+            <Button onClick={() => { }} className="Button" variant="contained" style={{ margin: 10, padding: 10 }} color="primary">Statistics</Button>
+            <Button onClick={() => { }} className="Button" variant="contained" style={{ margin: 10, padding: 10 }} color="primary">Transcripts</Button>
+            <Button onClick={() => { }} className="CTA" variant="contained" style={{ margin: 5, padding: 5, marginLeft: "auto", marginRight: 10 }} color="default">Sign Up</Button>
           </header>
         </div>
-        <div className="imgholder">
-          <img className="img-left" alt=""/>
-          <p className="lefttext">It's that time of year again! Register to vote:</p>
-          <img className="img-right" alt=""/>
-          <p className="righttext">Learn about important issues on the ballot this year:</p>
+        <div className="parentContainer">
+          <div className="containerLeft">
+            <div className="img-left">
+              <p className="lefttext">It's that time of year again! Register to vote:</p>
+            </div>
+          </div>
+          <div className="containerRight">
+            <div className="img-right">
+              <p className="righttext">It's that time of year again! Register to vote:</p>
+            </div>
+          </div>
         </div>
         <div className="Body">
           <body className="body-content">
-
+            <p>PLACEHOLDER</p>
           </body>
         </div>
-      </div>
+      </div >
     );
   }
 }

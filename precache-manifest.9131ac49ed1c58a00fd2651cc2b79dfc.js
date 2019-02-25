@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c228fa21f08e466f6dbf",
-    "url": "/HCDE498_VoterCentric/static/css/main.9e2b38ad.chunk.css"
+    "revision": "51c792e51db5d03bf058",
+    "url": "/HCDE498_VoterCentric/static/css/main.259e64cd.chunk.css"
   },
   {
-    "revision": "c228fa21f08e466f6dbf",
-    "url": "/HCDE498_VoterCentric/static/js/main.c228fa21.chunk.js"
+    "revision": "51c792e51db5d03bf058",
+    "url": "/HCDE498_VoterCentric/static/js/main.51c792e5.chunk.js"
   },
   {
     "revision": "da1f0a0e7239afde1785",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/HCDE498_VoterCentric/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "417279c86508f8833d2491f72a9b9593",
+    "revision": "b7d5ef189f7c06ef0de9e6b990e733ff",
     "url": "/HCDE498_VoterCentric/index.html"
   }
 ];

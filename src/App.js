@@ -24,9 +24,11 @@ class App extends Component {
           <img className="img-left" alt="" />
           <img className="img-right" alt="" />
         </div>
-        <body className="body-content">
+        <div className="Body">
+          <body className="body-content">
 
-        </body>
+          </body>
+        </div>
       </div>
     );
   }

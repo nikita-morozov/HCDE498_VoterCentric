@@ -17,7 +17,7 @@ class App extends Component {
             <Button onClick= {() => {
             }} className="Button" variant="contained" style={{margin: 10, padding: 10}} color="primary">Transcripts</Button>
             <Button onClick= {() => {
-            }} className="CTA" variant="contained" style={{margin: 5, padding: 5}} color="default">Sign Up</Button>
+            }} className="CTA" variant="contained" style={{margin: 5, padding: 5, marginLeft: 750}} color="default">Sign Up</Button>
           </header>
         </div>
         <div className="imgholder">

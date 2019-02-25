@@ -3,32 +3,27 @@
   font: Helvetica, sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-  pointer-events: none;
-}
-
 .Toolbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
   height: 80px;
   background-color: #c40000;
 }
 
+.App-logo {
+  animation: App-logo-spin infinite 17s linear;
+  height: 80px;
+  pointer-events: none;
+}
+
 .Button {
   height: 40px;
-  padding: 10px;
-  margin: 10px;
-  align-items: flex-start;
 }
 
 .CTA {
   height: 60px;
   padding: 5px;
   margin: 5px;
-  align-items: flex-end;
 }
 
 .img-left {

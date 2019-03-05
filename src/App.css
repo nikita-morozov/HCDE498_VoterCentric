@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 40px;
 }
 
 .containerLabel {
@@ -49,13 +48,15 @@
   font-size: 14pt;
 }
 
-.containerRight {
-  width: 40%;
-  margin-left: 30px;
+.containerMain {
+  width: 100%;
+  height: 300px;
+  border: 5px solid red;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   align-content: center;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .containerLeft {
@@ -69,6 +70,15 @@
 
 .img-left {
   height: 400px;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: 150%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.img-main {
+  height: 300px;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: 150%;
@@ -117,6 +127,14 @@
   text-align: left;
   background-color: #666666;
 }
+
+/* Voter Issue CSS here */
+
+.issue-body {
+  margin-top: 104px;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {

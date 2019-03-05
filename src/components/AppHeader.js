@@ -8,12 +8,12 @@ import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import { withStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
 import Button from '@material-ui/core/Button';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
-import '../App.css';
+import Home from '../App.js';
+import VoterIssues from '../VoterIssues.js';
+import Statistics from '../Statistics.js';
 
 const styles = theme => ({
     root: {
@@ -43,7 +43,7 @@ const styles = theme => ({
       <div className={classes.root}>
         <AppBar color="primary" styles="root">
           <Toolbar>
-            <Typography className={classes.title} variant="h6" color="inherit" noWrap>
+            <Typography onClick={() => {this.props.router.push('/')}} className={classes.title} variant="h6" color="inherit" noWrap>
               VoterCentric
             </Typography>
             <div className={classes.grow} />

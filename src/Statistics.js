@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import AppHeader from './components/AppHeader.js';
+import { withStyles } from '@material-ui/core/styles';
+import { Router } from 'react-router-dom';
 
 const styles = theme => ({
   parentContainer: {
@@ -11,16 +13,18 @@ const styles = theme => ({
 class Statistics extends Component {
   render() {
     return (
-      <div className="App">
-        <AppHeader />
-        <div className="Body">
-          <body className="body-content">
-            
-          </body>
-        </div>
-      </div >
+      <Router>
+        <div className="App">
+          <AppHeader />
+          <div className="Body">
+            <body className="body-content">
+              
+            </body>
+          </div>
+        </div >
+      </Router>
     );
   }
 }
 
-export default Statistics;
+export default withStyles(styles)(Statistics);

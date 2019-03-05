@@ -10,18 +10,29 @@ class App extends Component {
         <div className="parentContainer">
           <div className="containerLeft">
             <div className="img-left">
-              <p className="lefttext">It's that time of year again! Register to vote:</p>
+              <div className="containerLabel">
+                <p>It's that time of year again! Register to vote:</p>
+              </div>
             </div>
           </div>
           <div className="containerRight">
             <div className="img-right">
-              <p className="righttext">It's that time of year again! Register to vote:</p>
+              <div className="containerLabel">
+                <p>It's that time of year again! Register to vote:</p>
+              </div>
             </div>
           </div>
         </div>
         <div className="Body">
           <body className="body-content">
-            <p>PLACEHOLDER</p>
+            <div className="text-section">
+              <p>Header</p>
+              <p>This is where a paragraph of text might go. I'm going to write some stuff here so it ends up taking a decent amount of space, like any other paragraph might. Not sure what else to write, but I'm sure this length is just fine.</p>
+            </div>
+            <div className="text-section">
+              <p>Header</p>
+              <p>This is where a paragraph of text might go. I'm going to write some stuff here so it ends up taking a decent amount of space, like any other paragraph might. Not sure what else to write, but I'm sure this length is just fine.</p>
+            </div>
           </body>
         </div>
       </div >

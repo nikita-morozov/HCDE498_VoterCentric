@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 import AppHeader from './components/AppHeader.js';
 
+const styles = theme => ({
+  parentContainer: {
+    mt: 100
+  }
+})
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <AppHeader />
-        <div className="parentContainer">
+        <div className="parentContainer" styles="parentContainer">
           <div className="containerLeft">
             <div className="img-left">
               <p className="lefttext">It's that time of year again! Register to vote:</p>

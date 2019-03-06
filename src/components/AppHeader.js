@@ -1,19 +1,10 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import PropTypes from "prop-types";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import { fade } from "@material-ui/core/styles/colorManipulator";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-
-import Home from "../App.js";
-import VoterIssues from "../VoterIssues.js";
-import Statistics from "../Statistics.js";
+import { Link, withRouter } from "react-router-dom";
 
 const styles = theme => ({
   root: {
@@ -39,14 +30,14 @@ const styles = theme => ({
 
 function ButtonAppBar(props) {
   const { classes } = props;
+
   return (
-    // <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div className={classes.root}>
       <AppBar color="primary" styles="root">
         <Toolbar>
           <Typography
             onClick={() => {
-              this.props.router.push("/");
+              props.history.push("/");
             }}
             className={classes.title}
             variant="h6"
@@ -55,41 +46,36 @@ function ButtonAppBar(props) {
           >
             VoterCentric
           </Typography>
+
           <div className={classes.grow} />
+
           <Button
-            onClick={() => {}}
+            component={Link} to='/voterissues'
             color="inherit"
             style={{ margin: 10, padding: 10 }}
           >
-            <Link to="/voterissues">Voter Issues</Link>
+            Voter Issues
           </Button>
+
           <Button
-            onClick={() => {}}
+            component={Link} to='/statistics'
             color="inherit"
             style={{ margin: 10, padding: 10 }}
           >
-            <Link to="/statistics">Statistics</Link>
+            Statistics
           </Button>
+          
           <Button
-            onClick={() => {}}
+            component={Link} to='/transcripts'
             color="inherit"
             style={{ margin: 10, padding: 10 }}
           >
-            <Link to="/transcripts">Transcripts</Link>
+            Transcripts
           </Button>
         </Toolbar>
       </AppBar>
     </div>
-    // <Route exact path="/" component={Home} />
-    // <Route path="/statistics" component={Statistics} />
-    // <Route path="/voterissues" component={VoterIssues} />
-    // <Route path="/transcripts" component={VoterIssues} />
-    // </BrowserRouter>
   );
 }
 
-AppBar.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
-export default withStyles(styles)(ButtonAppBar);
+export default withRouter(withStyles(styles)(ButtonAppBar));

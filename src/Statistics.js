@@ -1,28 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import AppHeader from './components/AppHeader.js';
 import { withStyles } from '@material-ui/core/styles';
-import { Router } from 'react-router-dom';
 
 const styles = theme => ({
   parentContainer: {
     mt: 100
-  }
+  },
+  button: {
+    margin: theme.spacing.unit,
+  },
 })
 
 class Statistics extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          <AppHeader />
-          <div className="Body">
-            <body className="body-content">
-              
-            </body>
+      <div className="App">
+        <div className="parentContainer" styles="parentContainer">
+          <div className="containerMain">
           </div>
-        </div >
-      </Router>
+        </div>
+        <div className="Body">
+          <div className="parentContainer" styles="parentContainer">
+            <div className="containerMain">
+            </div>
+          </div>
+        </div>
+      </div >
     );
   }
 }

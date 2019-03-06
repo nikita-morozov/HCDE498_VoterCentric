@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
 import './App.css';
-import AppHeader from './components/AppHeader.js';
+import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   parentContainer: {
     mt: 100
-  }
+  },
+  button: {
+    margin: theme.spacing.unit,
+  },
 })
 
 class Statistics extends Component {
   render() {
     return (
       <div className="App">
-        <AppHeader />
+        <div className="parentContainer" styles="parentContainer">
+          <div className="containerMain">
+          </div>
+        </div>
         <div className="Body">
-          <body className="body-content">
-            
-          </body>
+          <div className="parentContainer" styles="parentContainer">
+            <div className="containerMain">
+            </div>
+          </div>
         </div>
       </div >
     );
   }
 }
 
-export default Statistics;
+export default withStyles(styles)(Statistics);

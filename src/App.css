@@ -18,7 +18,7 @@
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 80px;
+  margin-right: auto;
   height: fit-content;
   position: relative;
 }
@@ -53,13 +53,15 @@
 
 .containerMain {
   height: 500px;
-  border: 3px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   margin-bottom: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -80,14 +82,14 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-main {
+/* .img-main {
   height: 100%;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: 150%;
   display: flex;
   align-content: flex-end;
-}
+} */
 
 .Body {
   display: flex;
@@ -169,19 +171,24 @@
 .issue-moreinfo {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .issue-info {
+  height: fit-content max-content;
+  min-width: 220px;
+  max-width: 340px;
+  margin: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  margin: 5px;
   padding-bottom: 20px;
-  width: 33%;
   border: 2px dashed rgb(88, 88, 88);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .issue-subheadings {
   text-align: center;
   font-size: 22px;

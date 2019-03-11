@@ -16,7 +16,7 @@ const styles = theme => ({
 class Home extends Component {
     componentDidMount() {
         const popup = typeformEmbed.makePopup(
-            'https://developerplatform.typeform.com/to/Xc7NMh',
+            'https://hcdefourninetyeight.typeform.com/to/iJenjE',
             {
                 mode: 'popup',
                 autoClose: '4000',
@@ -45,7 +45,8 @@ class Home extends Component {
                             <Button
                                 id="pop-up"
                                 color="secondary"
-                                style={{ margin: 5, padding: 10, position: "relative", fontSize: "40px", fontWeight: "bold", color: "red" }}
+                                variant="outlined"
+                                style={{ margin: 5, padding: 10, fontSize: "40px", fontWeight: "bold", color: "red" }}
                             >
                                 Vote Now
                             </Button>

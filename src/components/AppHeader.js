@@ -11,8 +11,8 @@ const styles = theme => ({
     width: "100%",
     boxShadow: "0 100px 100px 100px rgba(0, 0, 0, 0)",
     zIndex: "100",
-    position: "relative",
-    opacity: "80%"
+    position: "static",
+    opacity: "80%",
   },
   grow: {
     flexGrow: 1

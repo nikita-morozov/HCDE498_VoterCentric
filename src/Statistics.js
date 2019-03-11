@@ -3,11 +3,8 @@ import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
-  parentContainer: {
-    mt: 100
-  },
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing.unit
   },
 })
 
@@ -18,11 +15,7 @@ class Statistics extends Component {
         <div className="parentContainer" styles="parentContainer">
           <div className="containerMain">
           </div>
-        </div>
-        <div className="Body">
-          <div className="parentContainer" styles="parentContainer">
-            <div className="containerMain">
-            </div>
+          <div className="containerMain">
           </div>
         </div>
       </div >

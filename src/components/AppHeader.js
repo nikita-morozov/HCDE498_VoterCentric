@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
@@ -11,14 +11,15 @@ const styles = theme => ({
     width: "100%",
     boxShadow: "0 100px 100px 100px rgba(0, 0, 0, 0)",
     zIndex: "100",
-    position: "relative"
+    position: "relative",
+    opacity: "80%"
   },
   grow: {
     flexGrow: 1
   },
   menuButton: {
-    marginLeft: -12,
-    marginRight: 20
+    marginLeft: -5,
+    marginRight: 5
   },
   title: {
     display: "none",
@@ -40,11 +41,12 @@ function ButtonAppBar(props) {
               props.history.push("/");
             }}
             className={classes.title}
-            variant="h6"
+            variant="h4"
             color="inherit"
+            style={{cursor: "pointer", padding: "10px"}}
             noWrap
           >
-            VoterCentric
+            <strong>Voter</strong>centric
           </Typography>
 
           <div className={classes.grow} />
@@ -52,7 +54,7 @@ function ButtonAppBar(props) {
           <Button
             component={Link} to='/voterissues'
             color="inherit"
-            style={{ margin: 10, padding: 10 }}
+            style={{ margin: 5, padding: 10 }}
           >
             Voter Issues
           </Button>
@@ -60,7 +62,7 @@ function ButtonAppBar(props) {
           <Button
             component={Link} to='/statistics'
             color="inherit"
-            style={{ margin: 10, padding: 10 }}
+            style={{ margin: 5, padding: 10 }}
           >
             Statistics
           </Button>
@@ -68,9 +70,17 @@ function ButtonAppBar(props) {
           <Button
             component={Link} to='/transcripts'
             color="inherit"
-            style={{ margin: 10, padding: 10 }}
+            style={{ margin: 5, padding: 10 }}
           >
             Transcripts
+          </Button>
+
+          <Button
+            component={Link} to='/about'
+            color="inherit"
+            style={{ margin: 5, padding: 10 }}
+          >
+            About
           </Button>
         </Toolbar>
       </AppBar>

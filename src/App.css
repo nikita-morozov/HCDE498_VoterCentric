@@ -10,26 +10,35 @@
   background-color: #ffffff;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 17s linear;
-  height: 80px;
-  pointer-events: none;
-}
-
 .Button {
   height: 40px;
 }
 
 .CTA {
-  height: 60px;
-  width: 160px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 80px;
+  height: fit-content;
+  position: relative;
+}
+
+.about-text {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  width: 60%;
+  text-align: left;
+  padding-left: 20px;
+  border-left: 3px solid black;
 }
 
 .parentContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   align-content: center;
+  margin-top: 100px;
 }
 
 .containerLabel {
@@ -42,24 +51,23 @@
   align-items: center;
 }
 
-.containerLabel p {
-  opacity: 1.0;
-  color: white;
-  padding-left: 10px;
-  font-size: 20pt;
-}
-
 .containerMain {
-  width: 100%;
   height: 500px;
-  border: 5px solid red;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 80px;
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
-  align-content: center;
-  text-align: center;
   background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reachnotice {
+  font-size: 33px;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
 }
 
 .containerLeft {
@@ -71,43 +79,13 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-left {
-  height: 400px;
-  width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  background-size: 150%;
-  display: flex;
-  align-items: flex-end;
-}
-
 .img-main {
   height: 100%;
   width: 100%;
   background-image: url("https://images.unsplash.com/photo-1540908187087-eeabb5040af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-size: 150%;
   display: flex;
-  align-items: flex-end;
-}
-
-.img-right {
-  height: 400px;
-  width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1505170988624-4abfd7fa954b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80");
-  background-size: 150%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.lefttext {
-  text-align: center;
-  margin-top: 180px;
-  color: white;
-}
-
-.righttext {
-  text-align: center;
-  margin-top: 180px;
-  color: white;
+  align-content: flex-end;
 }
 
 .Body {
@@ -134,43 +112,99 @@
 /* Voter Issue CSS here */
 
 .issue-body {
-  margin-top: 104px;
+  margin-top: 100px;
 }
 
 .issue-body-content {
   text-align: left;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .single-issue {
-  margin-right: 40px;
-  width: 35%;
+  margin-bottom: 40px;
+  width: 80%;
   border: 3px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 10px;
 }
 
-.issue-header {
+.issue-header-small {
   font-size: 18px;
+  font-weight: bold;
+}
+
+.issue-header-big {
+  font-size: 26px;
   font-weight: bold;
 }
 
 .page-header {
   text-align: center;
   width: 100%;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
+.open-close {
+  color: rgb(0, 100, 190);
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  animation: make-smaller forwards .08s ease;
+  padding: 10px;
+}
+
+.open-close:hover {
+  animation: make-bigger forwards .08s ease;
+}
+
+.issue-moreinfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.issue-info {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  padding-bottom: 20px;
+  width: 33%;
+  border: 2px dashed rgb(88, 88, 88);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.158), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.issue-subheadings {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@keyframes make-bigger {
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
+    font-weight: normal;
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(1.08);
+    font-weight: bold;
+  }
+}
+
+@keyframes make-smaller {
+  from {
+    transform: scale(1.08);
+    font-weight: bold;
+  }
+  to {
+    transform: scale(1);
+    font-weight: normal;
   }
 }

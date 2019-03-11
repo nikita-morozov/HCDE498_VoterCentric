@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
+import * as typeformEmbed from '@typeform/embed';
 
 const styles = theme => ({
     App: {
@@ -13,6 +14,22 @@ const styles = theme => ({
 })
 
 class Home extends Component {
+    componentDidMount() {
+        const popup = typeformEmbed.makePopup(
+            'https://developerplatform.typeform.com/to/Xc7NMh',
+            {
+                mode: 'popup',
+                autoClose: '4000',
+                hideHeaders: 'true',
+                hideFooters: 'true',
+            }
+
+        )
+        document.getElementById('pop-up').addEventListener('click', function() {
+            popup.open();
+        })
+    }
+
     render() {
         // const { classes } = this.props;
         return (
@@ -26,10 +43,9 @@ class Home extends Component {
                         </div>
                         <div className="CTA">
                             <Button
-                                // component={""} 
-                                // to='/voterissues'
-                                color="primary"
-                                style={{ margin: 5, padding: 10, position: "relative", fontSize: "40px", fontWeight: "bold",}}
+                                id="pop-up"
+                                color="secondary"
+                                style={{ margin: 5, padding: 10, position: "relative", fontSize: "40px", fontWeight: "bold", color: "red" }}
                             >
                                 Vote Now
                             </Button>

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import Button from "@material-ui/core/Button";
 import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
-    parentContainer: {
+    App: {
         mt: 100
     },
     button: {
@@ -13,7 +14,7 @@ const styles = theme => ({
 
 class Home extends Component {
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
         return (
             <div className="App">
                 <div className="parentContainer" styles="parentContainer">
@@ -22,6 +23,16 @@ class Home extends Component {
                             <div className="containerLabel">
 
                             </div>
+                        </div>
+                        <div className="CTA">
+                            <Button
+                                // component={""} 
+                                // to='/voterissues'
+                                color="primary"
+                                style={{ margin: 5, padding: 10, position: "relative", fontSize: "40px", fontWeight: "bold",}}
+                            >
+                                Vote Now
+                            </Button>
                         </div>
                     </div>
                 </div>

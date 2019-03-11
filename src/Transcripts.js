@@ -15,15 +15,12 @@ class Transcripts extends Component {
     render() {
         return (
             <div className="App">
-                <div className="parentContainer" styles="parentContainer">
+                <div className="parentContainer">
                     <div className="containerMain">
+                        <p className="reachnotice">THIS PAGE IS A REACH GOAL</p>
                     </div>
-                </div>
-                <div className="Body">
-                    <div className="parentContainer" styles="parentContainer">
-                        <div className="containerMain">
-                            <h1>THIS PAGE IS A REACH GOAL</h1>
-                        </div>
+                    <div className="containerMain">
+                        <p className="reachnotice">THIS PAGE IS A REACH GOAL</p>
                     </div>
                 </div>
             </div >

@@ -6,6 +6,7 @@ import Home from "./Home.js";
 import Statistics from "./Statistics.js";
 import VoterIssues from "./VoterIssues.js";
 import Transcripts from "./Transcripts.js";
+import About from "./About.js";
 
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
   //   super(props);
   // }
   render() {
-    const { classes } = this.props;
+    // const { classes } = this.props;
     return (
       <div className="App">
         <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -23,6 +24,7 @@ class App extends Component {
             <Route path="/statistics" component={Statistics} />
             <Route path="/voterissues" component={VoterIssues} />
             <Route path="/transcripts" component={Transcripts} />
+            <Route path="/about" component={About} />
           </div>
         </BrowserRouter>
       </div>

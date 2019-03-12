@@ -52,46 +52,46 @@ class Issue extends Component {
           <p className="issue-paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas.
           </p>
-          <div className="issue-moreinfo">
-            <div className="issue-info">
-              <p className="issue-subheadings">
-                Argument Against
-              </p>
-              <p>
-                Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-              </p>
+            <div className="issue-moreinfo">
+              <div className="issue-info">
+                <p className="issue-subheadings">
+                  Argument Against
+                </p>
+                <p>
+                  Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
+                </p>
+              </div>
+              <div className="issue-info">
+                <p className="issue-subheadings">
+                  The Facts
+                </p>
+                <ul>
+                  <li>
+                    Duis hendrerit lacus metus, non elementum augue pretium laoreet.
+                  </li>
+                  <li>
+                    Ut et dictum ipsum.
+                  </li>
+                  <li>
+                    Praesent commodo felis ut diam lacinia pharetra convallis a ex.
+                  </li>
+                  <li>
+                    Nam non ligula ut tortor convallis bibendum.
+                  </li>
+                  <li>
+                    Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
+                  </li>
+                </ul>
+              </div>
+              <div className="issue-info">
+                <p className="issue-subheadings">
+                  Argument For
+                </p>
+                <p>
+                  Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
+                </p>
+              </div>
             </div>
-            <div className="issue-info">
-              <p className="issue-subheadings">
-                The Facts
-              </p>
-              <ul>
-                <li>
-                  Duis hendrerit lacus metus, non elementum augue pretium laoreet.
-                </li>
-                <li>
-                  Ut et dictum ipsum.
-                </li>
-                <li>
-                  Praesent commodo felis ut diam lacinia pharetra convallis a ex.
-                </li>
-                <li>
-                  Nam non ligula ut tortor convallis bibendum.
-                </li>
-                <li>
-                  Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-                </li>
-              </ul>
-            </div>
-            <div className="issue-info">
-              <p className="issue-subheadings">
-                Argument For
-              </p>
-              <p>
-                Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-              </p>
-            </div>
-          </div>
           <p className="open-close">
             Click here to read less...
           </p>

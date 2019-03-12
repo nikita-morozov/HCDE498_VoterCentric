@@ -1,0 +1,53 @@
+State,1988,1992,1996,2000,2004,2008,2012,Total D,Total R,% D,% R
+Democratic States,10,32,31,20,19,28,26,166,,,
+Republican States,40,18,19,30,31,22,24,,184,,
+Alabama,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Alaska,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Arizona,R,R,D,R,R,R,R,1,6,14.29%,85.71%
+Arkansas,R,D,D,R,R,R,R,2,5,28.57%,71.43%
+California,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Colorado,R,D,R,R,R,D,D,3,4,42.86%,57.14%
+Connecticut,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Delaware,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Florida,R,R,D,R,R,D,D,3,4,42.86%,57.14%
+Georgia,R,D,R,R,R,R,R,1,6,14.29%,85.71%
+Hawaii,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+Idaho,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Illinois,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Indiana,R,R,R,R,R,D,R,1,6,14.29%,85.71%
+Iowa,D,D,D,D,R,D,D,6,1,85.71%,14.29%
+Kansas,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Kentucky,R,D,D,R,R,R,R,2,5,28.57%,71.43%
+Louisiana,R,D,D,R,R,R,R,2,5,28.57%,71.43%
+Maine,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Maryland,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Massachusetts,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+Michigan,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Minnesota,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+Mississippi,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Missouri,R,D,D,R,R,R,R,2,5,28.57%,71.43%
+Montana,R,D,R,R,R,R,R,1,6,14.29%,85.71%
+Nebraska,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Nevada,R,D,D,R,R,D,D,4,3,57.14%,42.86%
+New Hampshire,R,D,D,R,D,D,D,5,2,71.43%,28.57%
+New Jersey,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+New Mexico,R,D,D,D,R,D,D,5,2,71.43%,28.57%
+New York,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+North Carolina,R,R,R,R,R,D,R,1,6,14.29%,85.71%
+North Dakota,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Ohio,R,D,D,R,R,D,D,4,3,57.14%,42.86%
+Oklahoma,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Oregon,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+Pennsylvania,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Rhode Island,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+South Carolina,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+South Dakota,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Tennessee,R,D,D,R,R,R,R,2,5,28.57%,71.43%
+Texas,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Utah,R,R,R,R,R,R,R,0,7,0.00%,100.00%
+Vermont,R,D,D,D,D,D,D,6,1,85.71%,14.29%
+Virginia,R,R,R,R,R,D,D,2,5,28.57%,71.43%
+Washington,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+West Virginia,D,D,D,R,R,R,R,3,4,42.86%,57.14%
+Wisconsin,D,D,D,D,D,D,D,7,0,100.00%,0.00%
+Wyoming,R,R,R,R,R,R,R,0,7,0.00%,100.00%

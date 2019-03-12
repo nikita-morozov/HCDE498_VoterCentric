@@ -6,7 +6,8 @@ import * as typeformEmbed from '@typeform/embed';
 
 const styles = theme => ({
     App: {
-        mt: 100
+        mt: 100,
+        zIndex: 0
     },
     button: {
         margin: theme.spacing.unit,
@@ -36,11 +37,6 @@ class Home extends Component {
             <div className="App">
                 <div className="parentContainer" styles="parentContainer">
                     <div className="containerMain">
-                        <div className="img_main">
-                            <div className="containerLabel">
-
-                            </div>
-                        </div>
                         <div className="CTA">
                             <Button
                                 id="pop-up"

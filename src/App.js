@@ -5,7 +5,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Home.js";
 import Statistics from "./Statistics.js";
 import VoterIssues from "./VoterIssues.js";
-import Transcripts from "./Transcripts.js";
 import About from "./About.js";
 
 
@@ -23,7 +22,6 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/statistics" component={Statistics} />
             <Route path="/voterissues" component={VoterIssues} />
-            <Route path="/transcripts" component={Transcripts} />
             <Route path="/about" component={About} />
           </div>
         </BrowserRouter>

@@ -44,16 +44,14 @@ class Home extends Component {
                         <div className="CTA">
                             <Button
                                 id="pop-up"
-                                color="secondary"
-                                variant="outlined"
-                                style={{ margin: 5, padding: 10, fontSize: "40px", fontWeight: "bold", color: "red" }}
+                                color="primary"
+                                variant="contained"
+                                style={{ margin: 5, padding: 10, fontSize: "40px", fontWeight: "bold", color: "white" }}
                             >
                                 Vote Now
                             </Button>
                         </div>
                     </div>
-                </div>
-                <div className="Body">
                 </div>
             </div >
         );

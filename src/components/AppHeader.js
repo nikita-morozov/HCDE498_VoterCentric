@@ -12,7 +12,7 @@ const styles = theme => ({
     boxShadow: "0 100px 100px 100px rgba(0, 0, 0, 0)",
     zIndex: "100",
     position: "static",
-    opacity: "80%",
+    opacity: ".6"
   },
   grow: {
     flexGrow: 1
@@ -34,7 +34,7 @@ function ButtonAppBar(props) {
 
   return (
     <div className={classes.root}>
-      <AppBar color="primary" styles="root">
+      <AppBar color="default" styles="root">
         <Toolbar>
           <Typography
             onClick={() => {

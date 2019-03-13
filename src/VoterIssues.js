@@ -33,11 +33,10 @@ class Issue extends Component {
       return (
         <div className="single-issue" onClick={this.makeBig}>
           <p className="issue-header-small">
-            Issue #
+            Initiative Measure No. 1577 concerns state taxes.
           </p>
           <p className="issue-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas...
-          </p>
+            This measure would provide that tax increases imposed by the legislature must expire one year after taking effect if not approved by a majority of voters after the tax is referred to voters by the legislature. It would provide that tax increases imposed in 2018 without voter approval must terminate upon the effective date of the measure. It prohibits the State from collecting revenue from any tax increase that is terminated by this measure.          </p>
           <p className="open-close">
             Click here to read more...
           </p>
@@ -47,51 +46,59 @@ class Issue extends Component {
       return (
         <div className="single-issue" onClick={this.makeSmall}>
           <p className="issue-header-big">
-            Issue #
+            Initiative Measure No. 1577 concerns state taxes.
           </p>
           <p className="issue-paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae ullamcorper eros, gravida posuere dui. Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue. Donec pellentesque feugiat eros, et ultricies purus aliquet et. Integer iaculis dolor sit amet purus sagittis, non bibendum felis egestas.
-          </p>
-            <div className="issue-moreinfo">
-              <div className="issue-info">
-                <p className="issue-subheadings">
-                  Argument Against
+            The people want to ensure short-term and long-term protection from state tax increases for individuals, families, businesses, and our state’s economy.
+  The people find that accountability and effectiveness are important aspects of setting tax policy. In order to make policy choices, the legislature needs information and public feedback to evaluate whether the continuation of recently enacted tax increases is in the public interest. This measure concerns taxes imposed by state government. This measure requires tax increases imposed by the legislature and not approved by voters to expire one year after taking effect and terminates any increase imposed in 2018 unless approved by voters at an election.
+The people want to ensure that tax increases are consistently a last resort.          </p>
+          <div className="issue-moreinfo">
+            <div className="issue-info">
+              <p className="issue-subheadings">
+                Argument Against
                 </p>
-                <p>
-                  Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-                </p>
-              </div>
-              <div className="issue-info">
-                <p className="issue-subheadings">
-                  The Facts
-                </p>
-                <ul>
-                  <li>
-                    Duis hendrerit lacus metus, non elementum augue pretium laoreet.
-                  </li>
-                  <li>
-                    Ut et dictum ipsum.
-                  </li>
-                  <li>
-                    Praesent commodo felis ut diam lacinia pharetra convallis a ex.
-                  </li>
-                  <li>
-                    Nam non ligula ut tortor convallis bibendum.
-                  </li>
-                  <li>
-                    Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-                  </li>
-                </ul>
-              </div>
-              <div className="issue-info">
-                <p className="issue-subheadings">
-                  Argument For
-                </p>
-                <p>
-                  Duis hendrerit lacus metus, non elementum augue pretium laoreet. Ut et dictum ipsum. Praesent commodo felis ut diam lacinia pharetra convallis a ex. Nam non ligula ut tortor convallis bibendum. Etiam molestie, ligula eu efficitur vehicula, purus lacus facilisis sem, nec lobortis odio nunc id augue.
-                </p>
-              </div>
+              <p>
+                The provisions of this act are to be
+  liberally construed to effectuate the intent, policies, and purposes
+of this act.                </p>
             </div>
+            <div className="issue-info">
+              <p className="issue-subheadings">
+                The Facts
+                </p>
+              <ul>
+                <li>
+                  If any provision of this act or its
+  application to any person or circumstance is held invalid, the
+  remainder of the act or the application of the provision to other
+  persons or circumstances is not affected.
+                  </li>
+                <li>
+                  This act is known and may be cited as the
+“Let The Voters Decide On Tax Increases.”                  </li>
+                <li>
+                  The ballot title for any vote of the people required under
+  this section must be substantially as follows:
+  "Shall taxes be imposed on . . . . . . . in order to allow a
+  spending increase above last year's authorized spending adjusted for
+personal income growth?"                  </li>
+              </ul>
+            </div>
+            <div className="issue-info">
+              <p className="issue-subheadings">
+                Argument For
+                </p>
+              <p>
+                RCW 43.135.033 (“Raises taxes” defined) and 2016 c 1 s
+  6 (Initiative Measure No. 1366, approved November 3, 2015) are each
+  amended to read as follows:
+  For the purposes of this chapter, "raises taxes" or “tax
+  increase” means any action or combination of actions by the state
+  legislature that increases state tax revenue deposited in any fund,
+  budget, or account, regardless of whether the revenues are deposited
+into the general fund.                </p>
+            </div>
+          </div>
           <p className="open-close">
             Click here to read less...
           </p>

@@ -10,8 +10,13 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/lab/Slider';
 //import Button from "@material-ui/core/Button";
-import Map1 from "./states.json";
-import Map2 from "./states.json";
+import map2012 from "./states2012.json";
+import map2008 from "./states2008.json";
+import map2004 from "./states2004.json";
+import map2000 from "./states2000.json";
+import map1996 from "./states1996.json";
+import map1992 from "./states1992.json";
+import map1988 from "./states1988.json";
 import './App.css';
 import { relative } from "path";
 
@@ -44,25 +49,25 @@ const sliderWrap = {
 
 class Statistics extends Component {
   state = {
-    value: 1988,
-    version: Map1
+    value: 1992,
+    version: map2012
   };
 
   handleChange = (event, value) => {
     if (value === 1988) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map1988 })
     } else if (value === 1992) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map1992 })
     } else if (value === 1996) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map1996 })
     } else if (value === 2000) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map2000 })
     } else if (value === 2004) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map2004 })
     } else if (value === 2008) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map2008 })
     } else if (value === 2012) {
-      this.setState({ value, version: Map1 })
+      this.setState({ value, version: map2012 })
     }
   };
 
@@ -70,9 +75,9 @@ class Statistics extends Component {
     super()
 
     this.state = {
-      value: 1988,
+      value: 2012,
       zoom: 3,
-      version: Map1
+      version: map2012
     }
 
     this.handleZoomIn = this.handleZoomIn.bind(this)
@@ -121,7 +126,7 @@ class Statistics extends Component {
           <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
           <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
           <hr />
-          <ComposableMap style={{width: "100%" }}>
+          <ComposableMap style={{ width: "100%" }}>
             <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
               <Geographies geography={this.state.version}>
                 {(geographies, projection) => geographies.map(geography => (
@@ -135,6 +140,7 @@ class Statistics extends Component {
                         stroke: "#607D8B",
                         strokeWidth: 0.1,
                         outline: "none",
+
                       }
                     }}
                   />

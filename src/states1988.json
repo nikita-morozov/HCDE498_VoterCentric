@@ -48598,7 +48598,7 @@
           "properties": {
             "NAME_1": "California",
             "ID_1": 5,
-            "color": "#0000FF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48617,7 +48617,7 @@
           "properties": {
             "NAME_1": "Colorado",
             "ID_1": 6,
-            "color": "#0000FF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48633,7 +48633,7 @@
           "properties": {
             "NAME_1": "Connecticut",
             "ID_1": 7,
-            "color": "#0000FF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48652,7 +48652,7 @@
           "properties": {
             "NAME_1": "Delaware",
             "ID_1": 8,
-            "color": "#0000FF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48736,7 +48736,7 @@
           "properties": {
             "NAME_1": "Florida",
             "ID_1": 10,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48782,7 +48782,7 @@
           "properties": {
             "NAME_1": "Georgia",
             "ID_1": 11,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48832,7 +48832,7 @@
           "properties": {
             "NAME_1": "Hawaii",
             "ID_1": 12,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -48852,7 +48852,7 @@
           "properties": {
             "NAME_1": "Idaho",
             "ID_1": 13,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48871,7 +48871,7 @@
           "properties": {
             "NAME_1": "Illinois",
             "ID_1": 14,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48889,7 +48889,7 @@
           "properties": {
             "NAME_1": "Indiana",
             "ID_1": 15,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48908,7 +48908,7 @@
           "properties": {
             "NAME_1": "Iowa",
             "ID_1": 16,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -48925,7 +48925,7 @@
           "properties": {
             "NAME_1": "Kansas",
             "ID_1": 17,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48953,7 +48953,7 @@
           "properties": {
             "NAME_1": "Kentucky",
             "ID_1": 18,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -48993,7 +48993,7 @@
           "properties": {
             "NAME_1": "Louisiana",
             "ID_1": 19,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49040,7 +49040,7 @@
           "properties": {
             "NAME_1": "Maine",
             "ID_1": 20,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49080,7 +49080,7 @@
           "properties": {
             "NAME_1": "Maryland",
             "ID_1": 21,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49118,7 +49118,7 @@
           "properties": {
             "NAME_1": "Massachusetts",
             "ID_1": 22,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49193,7 +49193,7 @@
           "properties": {
             "NAME_1": "Michigan",
             "ID_1": 23,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49211,7 +49211,7 @@
           "properties": {
             "NAME_1": "Minnesota",
             "ID_1": 24,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49228,7 +49228,7 @@
           "properties": {
             "NAME_1": "Mississippi",
             "ID_1": 25,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49252,7 +49252,7 @@
           "properties": {
             "NAME_1": "Missouri",
             "ID_1": 26,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49269,7 +49269,7 @@
           "properties": {
             "NAME_1": "Montana",
             "ID_1": 27,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49288,7 +49288,7 @@
           "properties": {
             "NAME_1": "Nebraska",
             "ID_1": 28,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49305,7 +49305,7 @@
           "properties": {
             "NAME_1": "Nevada",
             "ID_1": 29,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49322,7 +49322,7 @@
           "properties": {
             "NAME_1": "New Hampshire",
             "ID_1": 30,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49339,7 +49339,7 @@
           "properties": {
             "NAME_1": "New Jersey",
             "ID_1": 31,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49357,7 +49357,7 @@
           "properties": {
             "NAME_1": "New Mexico",
             "ID_1": 32,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49399,7 +49399,7 @@
           "properties": {
             "NAME_1": "New York",
             "ID_1": 33,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49448,7 +49448,7 @@
           "properties": {
             "NAME_1": "North Carolina",
             "ID_1": 34,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49465,7 +49465,7 @@
           "properties": {
             "NAME_1": "North Dakota",
             "ID_1": 35,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49484,7 +49484,7 @@
           "properties": {
             "NAME_1": "Ohio",
             "ID_1": 36,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49502,7 +49502,7 @@
           "properties": {
             "NAME_1": "Oklahoma",
             "ID_1": 37,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49520,7 +49520,7 @@
           "properties": {
             "NAME_1": "Oregon",
             "ID_1": 38,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49540,7 +49540,7 @@
           "properties": {
             "NAME_1": "Pennsylvania",
             "ID_1": 39,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49573,7 +49573,7 @@
           "properties": {
             "NAME_1": "Rhode Island",
             "ID_1": 40,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49640,7 +49640,7 @@
           "properties": {
             "NAME_1": "South Carolina",
             "ID_1": 41,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49660,7 +49660,7 @@
           "properties": {
             "NAME_1": "South Dakota",
             "ID_1": 42,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49683,7 +49683,7 @@
           "properties": {
             "NAME_1": "Tennessee",
             "ID_1": 43,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49723,7 +49723,7 @@
           "properties": {
             "NAME_1": "Texas",
             "ID_1": 44,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49741,7 +49741,7 @@
           "properties": {
             "NAME_1": "Utah",
             "ID_1": 45,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49757,7 +49757,7 @@
           "properties": {
             "NAME_1": "Vermont",
             "ID_1": 46,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49804,7 +49804,7 @@
           "properties": {
             "NAME_1": "Virginia",
             "ID_1": 47,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         },
         {
@@ -49871,7 +49871,7 @@
           "properties": {
             "NAME_1": "Washington",
             "ID_1": 48,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49889,7 +49889,7 @@
           "properties": {
             "NAME_1": "West Virginia",
             "ID_1": 49,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49936,7 +49936,7 @@
           "properties": {
             "NAME_1": "Wisconsin",
             "ID_1": 50,
-            "color": "#FFFFFF"
+            "color": "#0000FF"
           }
         },
         {
@@ -49955,7 +49955,7 @@
           "properties": {
             "NAME_1": "Wyoming",
             "ID_1": 51,
-            "color": "#FFFFFF"
+            "color": "#FF0000"
           }
         }
       ]

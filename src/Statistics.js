@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import ReactDOM from "react-dom"
+// import ReactDOM from "react-dom"
 import {
   ComposableMap,
   ZoomableGroup,
@@ -52,13 +52,13 @@ class Statistics extends Component {
     super()
 
     this.state = {
-      value: 1988,
+      value: 2000,
       zoom: 3,
     };
 
-    this.handleZoomIn = this.handleZoomIn.bind(this)
-    this.handleZoomOut = this.handleZoomOut.bind(this)
-    this.handleChange = this.handleChange.bind(this)
+    this.handleZoomIn = this.handleZoomIn.bind(this);
+    this.handleZoomOut = this.handleZoomOut.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange = (event, value) => {
@@ -80,7 +80,9 @@ class Statistics extends Component {
   render() {
     const { classes } = this.props;
     const { value } = this.state;
-    var version = map2012;
+    // This is very interesting
+    
+    var version;
 
     if (value === 1988) {
       version = map1988;
@@ -99,7 +101,6 @@ class Statistics extends Component {
     }
 
     return (
-
       <div>
         <div className="issue-body">
           <h3 className="page-header">
@@ -120,6 +121,7 @@ class Statistics extends Component {
               onChange={this.handleChange}
             />
             <h3>{this.state.value}</h3>
+            {/* This is very interesting */}
           </div>
         </div >
 
@@ -141,7 +143,12 @@ class Statistics extends Component {
                         stroke: "#607D8B",
                         strokeWidth: 0.1,
                         outline: "none",
-
+                      },
+                      hover: {
+                        outline: "none",
+                      },
+                      pressed: {
+                        outline: "none"
                       }
                     }}
                   />
@@ -159,8 +166,8 @@ Statistics.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  ReactDOM.render(<Statistics />, document.getElementById("app"))
-})
+// document.addEventListener("DOMContentLoaded", () => {
+//   ReactDOM.render(<Statistics />, document.getElementById("app"))
+// })
 
 export default withStyles(styles)(Statistics);

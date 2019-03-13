@@ -48,47 +48,29 @@ const sliderWrap = {
 }
 
 class Statistics extends Component {
-  state = {
-    value: 1992,
-    version: map2012
-  };
-
-  handleChange = (event, value) => {
-    if (value === 1988) {
-      this.setState({ value, version: map1988 })
-    } else if (value === 1992) {
-      this.setState({ value, version: map1992 })
-    } else if (value === 1996) {
-      this.setState({ value, version: map1996 })
-    } else if (value === 2000) {
-      this.setState({ value, version: map2000 })
-    } else if (value === 2004) {
-      this.setState({ value, version: map2004 })
-    } else if (value === 2008) {
-      this.setState({ value, version: map2008 })
-    } else if (value === 2012) {
-      this.setState({ value, version: map2012 })
-    }
-  };
-
   constructor() {
     super()
 
     this.state = {
-      value: 2012,
+      value: 1988,
       zoom: 3,
-      version: map2012
-    }
+    };
 
     this.handleZoomIn = this.handleZoomIn.bind(this)
     this.handleZoomOut = this.handleZoomOut.bind(this)
     this.handleChange = this.handleChange.bind(this)
   }
+
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+  
   handleZoomIn() {
     this.setState({
       zoom: this.state.zoom * 2,
     })
   }
+
   handleZoomOut() {
     this.setState({
       zoom: this.state.zoom / 2,
@@ -98,6 +80,24 @@ class Statistics extends Component {
   render() {
     const { classes } = this.props;
     const { value } = this.state;
+    var version = map2012;
+
+    if (value === 1988) {
+      version = map1988;
+    } else if (value === 1992) {
+      version = map1992;
+    } else if (value === 1996) {
+      version = map1996
+    } else if (value === 2000) {
+      version = map2000
+    } else if (value === 2004) {
+      version = map2004
+    } else if (value === 2008) {
+      version = map2008
+    } else if (value === 2012) {
+      version = map2012
+    }
+
     return (
 
       <div>
@@ -119,6 +119,7 @@ class Statistics extends Component {
               step={4}
               onChange={this.handleChange}
             />
+            <h3>{this.state.value}</h3>
           </div>
         </div >
 
@@ -128,7 +129,7 @@ class Statistics extends Component {
           <hr />
           <ComposableMap style={{ width: "100%" }}>
             <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
-              <Geographies geography={this.state.version}>
+              <Geographies geography={version}>
                 {(geographies, projection) => geographies.map(geography => (
                   <Geography
                     key={geography.id}

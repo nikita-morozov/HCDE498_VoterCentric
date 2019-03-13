@@ -84,7 +84,8 @@ class Statistics extends Component {
       <div>
         <div className="issue-body">
           <h3 className="page-header">
-            State Partisanship               </h3>
+            State Partisanship
+          </h3>
           <p className="about-text">
             <strong>Voter</strong>centric monitors all Presidential elections and extrapolates voter trends by state.
                     <br /><br />
@@ -94,9 +95,9 @@ class Statistics extends Component {
             <Slider
               classes={{ container: classes.slider }}
               value={value}
-              min={0}
-              max={6}
-              step={1}
+              min={1988}
+              max={2012}
+              step={4}
               onChange={this.handleChange}
             />
           </div>
@@ -106,8 +107,8 @@ class Statistics extends Component {
           <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
           <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
           <hr />
-          <ComposableMap>
-            <ZoomableGroup center={[-120, 45]} zoom={this.state.zoom}>
+          <ComposableMap style={{width: "100%" }}>
+            <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
               <Geographies geography={Map}>
                 {(geographies, projection) => geographies.map(geography => (
                   <Geography
@@ -116,9 +117,9 @@ class Statistics extends Component {
                     projection={projection}
                     style={{
                       default: {
-                        fill: "#263238",
+                        fill: geography.properties.color,
                         stroke: "#607D8B",
-                        strokeWidth: 0.25,
+                        strokeWidth: 0.1,
                         outline: "none",
                       }
                     }}

@@ -88,176 +88,204 @@ class Statistics extends Component {
     const { value } = this.state;
     // This is very interesting
 
-    var version;
-    if (value === 1988) {
-      version = (<Geographies geography={map1988}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 1992) {
-      version = (<Geographies geography={map1992}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 1996) {
-      version = (<Geographies geography={map1996}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 2000) {
-      version = (<Geographies geography={map2000}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 2004) {
-      version = (<Geographies geography={map2004}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 2008) {
-      version = (<Geographies geography={map2008}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    } else if (value === 2012) {
-      version = (<Geographies geography={map2012}>
-        {(geographies, projection) => geographies.map(geography => (
-          <Geography
-            key={geography.properties.ID_1}
-            geography={geography}
-            projection={projection}
-            style={{
-              default: {
-                fill: geography.properties.color,
-                stroke: "#607D8B",
-                strokeWidth: 0.1,
-                outline: "none",
-              },
-              hover: {
-                outline: "none",
-              },
-              pressed: {
-                outline: "none"
-              }
-            }}
-          />
-        ))}
-      </Geographies>);
-    }
+    var version = [];
+    // if (value === 1988) {
+    version.push(<ComposableMap style={{ width: value === 1988 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map1988}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 1992) {
+    version.push(<ComposableMap style={{ width: value === 1992 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map1992}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 1996) {
+    version.push(<ComposableMap style={{ width: value === 1996 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map1996}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 2000) {
+    version.push(<ComposableMap style={{ width: value === 2000 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map2000}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 2004) {
+    version.push(<ComposableMap style={{ width: value === 2004 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map2004}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 2008) {
+    version.push(<ComposableMap style={{ width: value === 2008 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map2008}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // } else if (value === 2012) {
+    version.push(<ComposableMap style={{ width: value === 2012 ? "100%": 0 }}>
+      <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
+        <Geographies geography={map2012}>
+          {(geographies, projection) => geographies.map(geography => (
+            <Geography
+              key={geography.properties.ID_1}
+              geography={geography}
+              projection={projection}
+              style={{
+                default: {
+                  fill: geography.properties.color,
+                  stroke: "#607D8B",
+                  strokeWidth: 0.1,
+                  outline: "none",
+                },
+                hover: {
+                  outline: "none",
+                },
+                pressed: {
+                  outline: "none"
+                }
+              }}
+            />
+          ))}
+        </Geographies>
+      </ZoomableGroup>
+    </ComposableMap>);
+    // }
 
     return (
       <div>
@@ -285,24 +313,20 @@ class Statistics extends Component {
         </div >
 
         <div style={wrapperStyles}>
-        <Button onClick={this.handleZoomOut}
+          <Button onClick={this.handleZoomOut}
             color="primary"
             style={{ margin: 5, padding: 10 }}
           >
             {"Zoom out"}
-          </Button>        
+          </Button>
           <Button onClick={this.handleZoomIn}
             color="primary"
             style={{ margin: 5, padding: 10 }}
           >
             {"Zoom in"}
           </Button>
-            <hr />
-          <ComposableMap style={{ width: "100%" }}>
-            <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
-              {version}
-            </ZoomableGroup>
-          </ComposableMap>
+          <hr />
+          {version}
         </div>
       </div>
     )

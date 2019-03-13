@@ -10,7 +10,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/lab/Slider';
 //import Button from "@material-ui/core/Button";
-import Map from "./states.json";
+import Map1 from "./states.json";
+import Map2 from "./states.json";
 import './App.css';
 import { relative } from "path";
 
@@ -43,22 +44,40 @@ const sliderWrap = {
 
 class Statistics extends Component {
   state = {
-    value: 3,
+    value: 1988,
+    version: Map1
   };
 
   handleChange = (event, value) => {
-    this.setState({ value });
+    if (value === 1988) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 1992) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 1996) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 2000) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 2004) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 2008) {
+      this.setState({ value, version: Map1 })
+    } else if (value === 2012) {
+      this.setState({ value, version: Map1 })
+    }
   };
 
   constructor() {
     super()
 
     this.state = {
+      value: 1988,
       zoom: 3,
+      version: Map1
     }
 
     this.handleZoomIn = this.handleZoomIn.bind(this)
     this.handleZoomOut = this.handleZoomOut.bind(this)
+    this.handleChange = this.handleChange.bind(this)
   }
   handleZoomIn() {
     this.setState({
@@ -69,11 +88,6 @@ class Statistics extends Component {
     this.setState({
       zoom: this.state.zoom / 2,
     })
-  }
-
-  colorSelect(state,year) {
-    
-    return 
   }
 
   render() {
@@ -109,7 +123,7 @@ class Statistics extends Component {
           <hr />
           <ComposableMap style={{width: "100%" }}>
             <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
-              <Geographies geography={Map}>
+              <Geographies geography={this.state.version}>
                 {(geographies, projection) => geographies.map(geography => (
                   <Geography
                     key={geography.id}

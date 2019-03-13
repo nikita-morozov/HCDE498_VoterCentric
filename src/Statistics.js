@@ -9,7 +9,7 @@ import {
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/lab/Slider';
-//import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 import map2012 from "./states2012.json";
 import map2008 from "./states2008.json";
 import map2004 from "./states2004.json";
@@ -32,7 +32,12 @@ const styles = theme => ({
   button: {
     margin: theme.spacing.unit,
   },
+  grow: {
+    flexGrow: 1
+  },
 })
+
+
 
 const wrapperStyles = {
   width: "100%",
@@ -52,7 +57,7 @@ class Statistics extends Component {
     super()
 
     this.state = {
-      value: 2000,
+      value: 1988,
       zoom: 3,
     };
 
@@ -63,8 +68,9 @@ class Statistics extends Component {
 
   handleChange = (event, value) => {
     this.setState({ value });
+    //console.log(value)
   };
-  
+
   handleZoomIn() {
     this.setState({
       zoom: this.state.zoom * 2,
@@ -81,9 +87,8 @@ class Statistics extends Component {
     const { classes } = this.props;
     const { value } = this.state;
     // This is very interesting
-    
-    var version;
 
+    var version;
     if (value === 1988) {
       version = map1988;
     } else if (value === 1992) {
@@ -126,15 +131,27 @@ class Statistics extends Component {
         </div >
 
         <div style={wrapperStyles}>
-          <button onClick={this.handleZoomIn}>{"Zoom in"}</button>
-          <button onClick={this.handleZoomOut}>{"Zoom out"}</button>
-          <hr />
+        <Button onClick={this.handleZoomOut}
+            variant="default"
+            color="primary"
+            style={{ margin: 5, padding: 10 }}
+          >
+            {"Zoom out"}
+          </Button>        
+          <Button onClick={this.handleZoomIn}
+            variant="default"
+            color="primary"
+            style={{ margin: 5, padding: 10 }}
+          >
+            {"Zoom in"}
+          </Button>
+            <hr />
           <ComposableMap style={{ width: "100%" }}>
             <ZoomableGroup center={[-122, 48]} zoom={this.state.zoom}>
               <Geographies geography={version}>
                 {(geographies, projection) => geographies.map(geography => (
                   <Geography
-                    key={geography.id}
+                    key={geography.properties.ID_1}
                     geography={geography}
                     projection={projection}
                     style={{
